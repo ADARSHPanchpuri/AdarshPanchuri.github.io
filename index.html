@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Adarsh Panchpuri Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+
+.custom-card {
+      background-color: #1a1a1a;
+      color: #fff;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .custom-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+
+    .skills-list {
+      list-style: disc;
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+      color: #555;
+    }
+
+    h5.text-primary, h5.text-success, h5.text-warning {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+
+
+	/* Uniform heading style */
+.skill-header {
+  font-weight: 700;
+  color: #ffbd39; /* matches navbar highlight color */
+  font-size: 1.1rem;
+}
+
+/* Horizontal skill tags */
+.skill-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags span {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Adarsh Panchpuri</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Adarsh Panchpuri</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Product Mangement  ',
+						'Data Analysis   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Final Year Undergraduate - Bits Pilani 25'</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/adarshpanchpuri123/" class="btn btn-primary py-3 px-4">Linkedin</a> 
+							</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+	<section class="ftco-about ftco-section" id="about-section">
+		<div class="container text-center">
+		  <h2 class="mb-4">ABOUT ME</h2>
+		  <p class="mb-5">
+	
+
+			Hey! I’m <strong>Adarsh Panchpuri</strong> — a final-year engineering student , deeply interested in solving real-world problems through product thinking, data, and strategy.
+
+			I enjoy digging into how people interact with products and how small design or data-led decisions can create big impact. I'm always curious, quick to learn, and eager to build things that are useful, simple, and scalable.
+			
+			I’ve been learning by working on hands-on projects where I get to combine product, business, and analytics thinking. I'm always looking for opportunities where I can grow, take ownership, and contribute meaningfully to product teams.
+			
+			
+
+
+		  </p>
+	  
+		  <h3 class="mt-5 mb-4 text-center">What I Do!</h3>
+<div class="row justify-content-center">
+
+  <!-- Product & Strategy -->
+  <div class="col-md-4 mb-4">
+    <div class="p-4 shadow rounded custom-card h-100">
+		<h5 class="skill-header"> Product & Strategy</h5>
+<p>I enjoy turning ambiguous problems into clear product opportunities. From scoping features to mapping user journeys, I think deeply about usability, simplicity, and real-world impact. My approach is user-first, insight-driven, and iterative.</p>
+<strong>Skills:</strong>
+<div class="skill-tags">
+  <span>Product Management</span>
+  <span>Figma</span>
+  <span>Jira</span>
+  <span>Agile</span>
+  <span>Wireframing</span>
+</div>
+		
+    </div>
+  </div>
+
+  <!-- Data & Analysis -->
+  <div class="col-md-4 mb-4">
+    <div class="p-4 shadow rounded custom-card h-100">
+		<h5 class="skill-header"> Data & Analysis</h5>
+<p>I use data as a decision-making tool, not just a report card. Whether it’s writing SQL queries, exploring trends, or building dashboards, I focus on extracting insights that inform strategy and drive results.</p>
+<strong>Skills:</strong>
+<div class="skill-tags">
+  <span>Advanced SQL</span>
+  <span>Python</span>
+  <span>Excel</span>
+  <span>Power BI</span>
+  <span>Statistics</span>
+</div>
+    </div>
+  </div>
+
+  <!-- Soft Skills -->
+  <div class="col-md-4 mb-4">
+    <div class="p-4 shadow rounded custom-card h-100">
+		<h5 class="skill-header"> Soft Skills</h5>
+		<p>Curious by nature and structured in my thinking, I thrive in fast-paced, ambiguous environments. I take ownership, ask thoughtful questions, and communicate ideas clearly — both in writing and in conversations.</p>
+		<strong>Traits:</strong>
+		<div class="skill-tags">
+		  <span>Ownership</span>
+		  <span>Collaborative Thinking</span>
+		  <span>Problem-Solving</span>
+		  <span>Adaptability</span>
+		</div>
+    </div>
+  </div>
+
+</div>
+		</div>
+	  </section>
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		
+
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-10 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Experience</h1>
+			  <h2 class="mb-4">Experience</h2>
+			  <p>Hands-on internships where I solved real product, strategy, and data problems across diverse industries.</p>
+			</div>
+		  </div>
+		  
+		  <div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="col d-flex">
+			  <div class="resume-wrap d-flex flex-column justify-content-between ftco-animate p-4 bg-dark text-white rounded w-100 h-100">
+				<span class="date" style="color:#ffbd39">Aug 2024 – Dec 2024</span>
+				<h2 class="mt-2">Product Intern</h2>
+				<span class="position text-uppercase text-muted">ZunRoof, Gurugram</span>
+				<p class="mt-3">Optimized production workflows and in-house assembly, conducted market research, proposed product features, and built dashboards to support strategic and operational decisions. Learned how to collaborate across ops, tech, and business teams to ship faster solutions.</p>
+			  </div>
+			</div>
+		  
+			<div class="col d-flex">
+			  <div class="resume-wrap d-flex flex-column justify-content-between ftco-animate p-4 bg-dark text-white rounded w-100 h-100">
+				<span class="date" style="color:#ffbd39">May 2023 – Jul 2023</span>
+				<h2 class="mt-2">Mangement Intern</h2>
+				<span class="position text-uppercase text-muted">Crossbar Talent Solutions</span>
+				<p class="mt-3">Designed an ESG scoring tool, aligned sustainability metrics with global frameworks, and automated data analysis workflows. Facilitated survey campaigns and improved reporting processes to support investor-facing sustainability insights.</p>
+			  </div>
+			</div>
+		  
+			<div class="col d-flex">
+			  <div class="resume-wrap d-flex flex-column justify-content-between ftco-animate p-4 bg-dark text-white rounded w-100 h-100">
+				<span class="date" style="color:#ffbd39">May 2022 – Jul 2022</span>
+				<h2 class="mt-2">Product Growth Intern</h2>
+				<span class="position text-uppercase text-muted">UPXO, Jaipur, Rajasthan</span>
+				<p class="mt-3">Explored urban mobility use cases and helped shape the value proposition for an electric last-mile vehicle. Learned how to think about product rollout from a strategic and user-first lens.</p>
+			  </div>
+			</div>
+		  </div>
+		  
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2025</span>
+    					<h2>B.E. in Electronics and Instrumentation Engineering</h2>
+    					<span class="position">BITS Pilani, Goa Campus
+							</span>
+    					<p class="mt-4"> Relevant Coursework: Principles of Economics, Probability and Statistics, Computer Programming</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2020</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Nirmal Deep School, Uttarakhand</span>
+    					<p class="mt-4">Class 12 (CBSE), Percentage: 94%
+							</p>
+							<p class="mt-4">
+								Class 10 (CBSE), Percentage: 92.8%.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			
+    		</div>
+    	</div>
+    </section>
+
+   
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <!-- Section Title -->
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>A showcase of my work across Product Strategy and Data Analytics.</p>
+			</div>
+		  </div>
+	  
+		  <!-- 🔶 Product Projects -->
+		  <div class="row mb-4">
+			<div class="col-md-12 text-left">
+			  <h3 class="mb-4 font-weight-bold">Product Projects</h3>
+			</div>
+	  
+			<!-- Project 1 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://drive.google.com/file/d/1RsMcy60H7uHsyLZ-2c9ubuLnxx1aze5M/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/prod_1.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1RsMcy60H7uHsyLZ-2c9ubuLnxx1aze5M/view?usp=sharing">Blinkit GOV Strategy</a></h3>
+				  <p>Designed a daily essentials subscription model to boost Gross Order Value and improve user retention.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Project 2 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://drive.google.com/file/d/1QwpJXR5icLViBu4z5s2dGsr_c_tV9LYC/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/prod_2.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1QwpJXR5icLViBu4z5s2dGsr_c_tV9LYC/view?usp=sharing">Ride-Hailing Profitability RCA</a></h3>
+				  <p>Conducted a root cause analysis to identify issues impacting ride performance and profitability. </p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Project 3 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://drive.google.com/file/d/1mAWsOWfLIhawZVfRYOUOgEdxZNQB853p/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/prod_3.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1mAWsOWfLIhawZVfRYOUOgEdxZNQB853p/view?usp=sharing">WhatsApp Meta AI Retention</a></h3>
+				  <p>Explored user pain points and behavior around AI features in WhatsApp. Proposed product improvements to drive better adoption and long-term engagement.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Project 4 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://drive.google.com/file/d/1Y_ehlhDtwnrowkYEZhxm0D9O2l6CiIHj/view?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/prod_4.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1Y_ehlhDtwnrowkYEZhxm0D9O2l6CiIHj/view?usp=sharing">Fashion Influencer GTM Launch</a></h3>
+				  <p>Developed a GTM strategy to launch a fashion designer as a global influencer. Focused on storytelling, digital engagement, and strategic collaborations.</p>
+				</div>
+			  </div>
+			</div>
+	  
+		
+		  </div>
+	  
+		  <!-- 🔷 Data Projects -->
+		  <div class="row mt-5">
+			<div class="col-md-12 text-left">
+			  <h3 class="mb-4 font-weight-bold">Data Projects</h3>
+			</div>
+	  
+			<!-- Data Project 1 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://github.com/ADARSHPanchpuri/Amazon-Revenue-Analysis-" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/ADARSHPanchpuri/Amazon-Revenue-Analysis-">Ecommerce Revenue Analysis</a></h3>
+				  <p>Used advanced SQL queries to analyze customer behavior and product trends of Ecommerce Website.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Data Project 2 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://drive.google.com/file/d/1rwY63cmkx4XkY1Hiqj7wi-ul6V1_89Bt/view?usp=drive_link" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1rwY63cmkx4XkY1Hiqj7wi-ul6V1_89Bt/view?usp=drive_link">Ecommerce Revenue Analysis Dashboard</a></h3>
+				  <p>Built  an interactive Power BI dashboard for Ecommerce Data Analysis.</p>
+				</div>
+			  </div>
+			</div>
+	  
+		
+			<!-- Data Project 4 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://github.com/ADARSHPanchpuri/Music-Store-Data-Analysis" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/ADARSHPanchpuri/Music-Store-Data-Analysis">Music Store SQL Analysis</a></h3>
+				  <p>Analyzed customer behavior and product trends using SQL.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Data Project 5 -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://github.com/ADARSHPanchpuri/Budgeting-and-Forecasting" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/ADARSHPanchpuri/Budgeting-and-Forecasting">Budegeting And Forecasting </a></h3>
+				  <p>Budget Planning & Forecasting Dashboard Using Excell.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+
+
+
+
+
+
+
+
+
+<!--
+
+	
+	
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+
+		
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
+                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		 added justify-content-center to center align the last two projects 
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+
+
+-->
+	
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                
+                <span style="color:#ffbd39" >Observant Explorer</span>
+				<span>Finding stories in daily interactions</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+               
+				<span style="color:#ffbd39" >	Constant Reader</span>
+                <span>Exploring ideas through books & blogs</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+				<span style="color:#ffbd39" >	Calisthenics Practitioner</span>
+                <span>Building strength, discipline & focus</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <span style="color:#ffbd39" >	Chess Enthusiast</span>
+                <span>Always learning the next move</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2 style="color:#ffbd39" >"Decode. Discover. Deliver." </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/ADARSHPanchpuri" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Goa, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">8218126280</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">adarshpanch@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		
+			<!-- Data Project 5 --><h3 class="mb-4">Linkedin</h3>
+	            <p><a href="https://www.linkedin.com/in/adarshpanchpuri123/">LinkedIn link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCgKX3G5nJHBzOxjDsKbH5FjFKuPIrOKW1B86AF_t5-0LnJQ/viewform?usp=sharing" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
